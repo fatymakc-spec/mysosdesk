@@ -297,10 +297,11 @@ footer {
     font-size: 38px;
   }
 }
+```css
 .green-text {
   color: #6B8F71;
 }
-```css
+
 .service-card h2 {
   color: #6B8F71;
 }
@@ -309,13 +310,17 @@ footer {
   background: #fbf3eb;
   border-radius: 0 0 30px 30px;
 }
-```
+
+/* Logo image */
+
 .logo img {
-  height: 75px;
+  height: 60px;
   width: auto;
+  max-width: 260px;
   display: block;
 }
 
 .logo {
   text-decoration: none;
 }
+```
