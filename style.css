@@ -300,3 +300,13 @@ footer {
 .green-text {
   color: #6B8F71;
 }
+```css
+.service-card h2 {
+  color: #6B8F71;
+}
+
+.page-hero {
+  background: #fbf3eb;
+  border-radius: 0 0 30px 30px;
+}
+```
