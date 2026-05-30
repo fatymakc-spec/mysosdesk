@@ -407,3 +407,13 @@ main,
 nav a.active {
   color: #6B8F71;
 }
+.logo img {
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.03);
+}
+.content-card h2 {
+  color: #6B8F71;
+}
