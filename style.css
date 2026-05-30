@@ -336,9 +336,20 @@ footer {
   padding: 0 8%;
 }
 
+.about-banner {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  padding: 0 8%;
+  text-align: center;
+}
+
 .about-banner img {
   width: 100%;
+  max-width: 900px;
   height: 420px;
   object-fit: cover;
+  object-position: center;
   border-radius: 24px;
+  display: block;
+  margin: 0 auto;
 }
