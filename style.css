@@ -310,3 +310,12 @@ footer {
   border-radius: 0 0 30px 30px;
 }
 ```
+.logo img {
+  height: 75px;
+  width: auto;
+  display: block;
+}
+
+.logo {
+  text-decoration: none;
+}
