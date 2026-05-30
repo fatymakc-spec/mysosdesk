@@ -3,321 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simply Organized Solutions (SOS)</title>
-  <style>
-    :root {
-      --cream: #fdfbf8;
-      --soft-beige: #f7efe6;
-      --brown: #4b2f24;
-      --gold: #c8953b;
-      --terracotta: #c85f3f;
-      --sage: #58724f;
-      --light-border: #ead8c7;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: var(--cream);
-      color: var(--brown);
-      line-height: 1.6;
-    }
-
-    header {
-      background: #fffdf9;
-      padding: 22px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid var(--light-border);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .logo-sos {
-      font-family: Georgia, serif;
-      font-size: 46px;
-      letter-spacing: -3px;
-    }
-
-    .logo-sos span:nth-child(1) { color: var(--terracotta); }
-    .logo-sos span:nth-child(2) { color: var(--gold); }
-    .logo-sos span:nth-child(3) { color: var(--sage); }
-
-    .logo-text {
-      line-height: 1.1;
-    }
-
-    .logo-text strong {
-      display: block;
-      font-size: 16px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-    }
-
-    .logo-text em {
-      font-family: Georgia, serif;
-      font-size: 31px;
-      color: var(--sage);
-    }
-
-    nav a {
-      margin-left: 24px;
-      color: var(--brown);
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: bold;
-    }
-
-    .btn {
-      display: inline-block;
-      background: var(--terracotta);
-      color: white;
-      padding: 14px 26px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 22px;
-    }
-
-    .hero {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      padding: 70px 8%;
-      gap: 40px;
-      background: linear-gradient(90deg, #fffaf4 0%, #f8efe5 100%);
-    }
-
-    .hero h1 {
-      font-family: Georgia, serif;
-      font-size: 54px;
-      line-height: 1.1;
-      margin-bottom: 22px;
-    }
-
-    .hero h1 span {
-      color: var(--terracotta);
-    }
-
-    .hero p {
-      font-size: 20px;
-      max-width: 520px;
-    }
-
-    .hero-tags {
-      margin-top: 22px;
-      color: var(--sage);
-      font-weight: bold;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      font-size: 14px;
-    }
-
-    .hero-image {
-      background: #fff7ee;
-      border-radius: 24px;
-      padding: 40px;
-      border: 1px solid var(--light-border);
-      box-shadow: 0 20px 45px rgba(80, 45, 30, 0.08);
-      text-align: center;
-    }
-
-    .desk-art {
-      font-size: 120px;
-      line-height: 1;
-    }
-
-    section {
-      padding: 70px 8%;
-    }
-
-    .section-title {
-      text-align: center;
-      font-family: Georgia, serif;
-      font-size: 38px;
-      margin-bottom: 16px;
-    }
-
-    .section-subtitle {
-      text-align: center;
-      max-width: 680px;
-      margin: 0 auto 40px;
-      color: #6f5a4f;
-    }
-
-    .intro {
-      display: grid;
-      grid-template-columns: 1fr 1.2fr;
-      gap: 50px;
-      align-items: center;
-    }
-
-    .intro-card {
-      background: white;
-      border: 1px solid var(--light-border);
-      border-radius: 26px;
-      padding: 34px;
-      box-shadow: 0 16px 35px rgba(80, 45, 30, 0.07);
-    }
-
-    .intro-card h2 {
-      font-family: Georgia, serif;
-      font-size: 38px;
-      margin-bottom: 18px;
-    }
-
-    .services-preview {
-      background: #fffaf5;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
-
-    .card {
-      background: white;
-      border: 1px solid var(--light-border);
-      border-radius: 18px;
-      padding: 26px;
-      text-align: center;
-      box-shadow: 0 10px 25px rgba(80, 45, 30, 0.05);
-    }
-
-    .icon {
-      width: 58px;
-      height: 58px;
-      border-radius: 50%;
-      background: var(--gold);
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 18px;
-      font-size: 26px;
-    }
-
-    .card:nth-child(1) .icon,
-    .card:nth-child(3) .icon {
-      background: var(--terracotta);
-    }
-
-    .card:nth-child(4) .icon,
-    .card:nth-child(6) .icon {
-      background: var(--sage);
-    }
-
-    .why {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 24px;
-      text-align: center;
-    }
-
-    .why div {
-      padding: 20px;
-    }
-
-    .cta {
-      background: var(--soft-beige);
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: center;
-      border-top: 1px solid var(--light-border);
-    }
-
-    .cta h2 {
-      font-family: Georgia, serif;
-      font-size: 42px;
-      margin-bottom: 14px;
-    }
-
-    .contact-info p {
-      margin-bottom: 10px;
-      font-size: 17px;
-    }
-
-    footer {
-      background: var(--brown);
-      color: white;
-      text-align: center;
-      padding: 22px;
-      font-size: 14px;
-    }
-
-    @media (max-width: 850px) {
-      header {
-        flex-direction: column;
-        gap: 18px;
-      }
-
-      nav a {
-        margin: 0 8px;
-        font-size: 13px;
-      }
-
-      .hero,
-      .intro,
-      .cta {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-
-      .hero h1 {
-        font-size: 40px;
-      }
-
-      .cards {
-        grid-template-columns: 1fr;
-      }
-
-      .why {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
-    @media (max-width: 500px) {
-      .why {
-        grid-template-columns: 1fr;
-      }
-
-      .logo {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .hero h1 {
-        font-size: 34px;
-      }
-    }
-  </style>
+  <title>Simply Organized Solutions | My SOS Desk</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-  <header>
-    <div class="logo">
-      <div class="logo-sos"><span>S</span><span>O</span><span>S</span></div>
+  <header class="site-header">
+    <a href="index.html" class="logo">
+      <div class="logo-main">SOS</div>
       <div class="logo-text">
-        <strong>Simply Organized</strong>
+        <span>Simply Organized</span>
         <em>Solutions</em>
       </div>
-    </div>
+    </a>
 
     <nav>
       <a href="index.html">Home</a>
@@ -329,124 +27,66 @@
 
   <main>
     <section class="hero">
-      <div>
-        <h1>Simply Organized <span>Solutions</span> (SOS)</h1>
-        <p>Helping busy individuals, families, and small businesses save time, stay organized, and reduce stress.</p>
-        <div class="hero-tags">
-          Forms • Resumes • Travel Planning • Admin Support
-        </div>
-        <a class="btn" href="contact.html">Request Assistance</a>
+      <div class="hero-text">
+        <p class="eyebrow">Forms • Resumes • Travel Planning • Admin Support</p>
+        <h1>Simply organized support for busy lives.</h1>
+        <p class="hero-description">
+          Helping individuals, families, and small businesses save time, stay organized,
+          and reduce stress with thoughtful virtual assistance.
+        </p>
+        <a href="contact.html" class="button">Request Assistance</a>
       </div>
 
-      <div class="hero-image">
-        <div class="desk-art">📁 🪴 ✅</div>
+      <div class="hero-card">
+        <div class="folder-shape"></div>
+        <div class="check-card">✓</div>
         <p>Professional support for the tasks that keep piling up.</p>
       </div>
     </section>
 
-    <section class="intro">
-      <div class="intro-card">
+    <section class="intro-grid">
+      <div class="content-card">
         <h2>Hi, I’m Fatyma.</h2>
         <p>
-          I’m the founder of Simply Organized Solutions (SOS). My mission is to help busy people simplify their lives by handling the tasks that take up valuable time.
+          I created Simply Organized Solutions to help people handle the everyday
+          tasks that can feel overwhelming — forms, resumes, job applications,
+          travel details, documents, and admin support.
         </p>
-        <br />
-        <p>
-          From forms and resumes to everyday administrative support, I provide reliable, detail-oriented service so you can focus on what matters most.
-        </p>
-        <a class="btn" href="about.html">Learn More</a>
       </div>
 
-      <div class="intro-card">
+      <div class="content-card">
         <h2>Your extra helping hand.</h2>
         <p>
-          Whether you need help completing forms, organizing documents, preparing applications, or managing day-to-day tasks, SOS is here to make things feel lighter and more manageable.
+          Whether you need help completing paperwork, updating your resume,
+          organizing documents, or handling digital tasks, SOS is here to make
+          life feel a little easier.
         </p>
       </div>
     </section>
 
     <section class="services-preview">
-      <h2 class="section-title">Services</h2>
-      <p class="section-subtitle">Support designed to help you stay organized, productive, and stress-free.</p>
+      <p class="eyebrow">How I can help</p>
+      <h2>Simple, reliable support when you need it.</h2>
 
-      <div class="cards">
-        <div class="card">
-          <div class="icon">✓</div>
-          <h3>Form Filling Assistance</h3>
-          <p>Accurate support with online forms, applications, and paperwork.</p>
-        </div>
-
-        <div class="card">
-          <div class="icon">📄</div>
-          <h3>Resume Assistance</h3>
-          <p>Resume help designed to highlight your strengths clearly and professionally.</p>
-        </div>
-
-        <div class="card">
-          <div class="icon">💼</div>
-          <h3>Job Application Support</h3>
-          <p>Assistance finding and applying for opportunities with confidence.</p>
-        </div>
-
-        <div class="card">
-          <div class="icon">⌨</div>
-          <h3>Document Typing & Transcription</h3>
-          <p>Clean, organized documents delivered with care and attention to detail.</p>
-        </div>
-
-        <div class="card">
-          <div class="icon">✈</div>
-          <h3>Travel Planning Assistance</h3>
-          <p>Help researching flights, hotels, itineraries, and travel details.</p>
-        </div>
-
-        <div class="card">
-          <div class="icon">📅</div>
-          <h3>Virtual Assistant Support</h3>
-          <p>Flexible administrative support tailored to your needs.</p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="section-title">Why Choose SOS</h2>
-      <div class="why">
-        <div>
-          <h3>Reliable</h3>
-          <p>You can count on clear communication and dependable support.</p>
-        </div>
-        <div>
-          <h3>Detail-Oriented</h3>
-          <p>I pay attention to the little things so you don’t have to.</p>
-        </div>
-        <div>
-          <h3>Personalized</h3>
-          <p>Every client and project is handled with care.</p>
-        </div>
-        <div>
-          <h3>Professional</h3>
-          <p>Friendly, organized service from start to finish.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta">
-      <div>
-        <h2>Let’s simplify your life.</h2>
-        <p>Ready to get organized and save time? I’m here to help.</p>
-        <a class="btn" href="contact.html">Contact SOS</a>
+      <div class="service-list">
+        <div>Form Filling Assistance</div>
+        <div>Resume Assistance</div>
+        <div>Job Application Support</div>
+        <div>Document Typing & Transcription</div>
+        <div>Travel Planning Assistance</div>
+        <div>Virtual Assistant & Administrative Support</div>
       </div>
 
-      <div class="contact-info">
-        <p><strong>Email:</strong> hello@mysosdesk.com</p>
-        <p><strong>Phone:</strong> 770-580-9638</p>
-        <p><strong>Website:</strong> mysosdesk.com</p>
-      </div>
+      <a href="services.html" class="text-link">View all services →</a>
     </section>
   </main>
 
   <footer>
-    © 2026 Simply Organized Solutions (SOS) | All Rights Reserved
+    <div class="footer-logo">
+      <span>SOS</span>
+      <em>Solutions</em>
+    </div>
+    <p>hello@mysosdesk.com | 770-580-9638</p>
   </footer>
 
 </body>
