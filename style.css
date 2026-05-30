@@ -314,9 +314,9 @@ footer {
 /* Logo image */
 
 .logo img {
-  height: 60px;
+  height: 85px;
   width: auto;
-  max-width: 260px;
+  max-width: none;
   display: block;
 }
 
