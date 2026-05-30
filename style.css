@@ -316,8 +316,14 @@ footer {
 .logo img {
   height: 80px;
   width: auto;
-  max-width: none;
   display: block;
+}
+
+.footer-logo img {
+  height: 70px;
+  width: auto;
+  display: block;
+  margin: 0 auto 15px;
 }
 
 .logo {
