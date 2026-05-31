@@ -472,7 +472,12 @@ nav a.active {
   height: 420px;
 }
 .hero {
-  grid-template-columns: 0.8fr 1.2fr;
+  padding: 70px 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: center;
+  background: #fbf3eb;
 }
 
 .hero-image img {
