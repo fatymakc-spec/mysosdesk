@@ -446,3 +446,21 @@ nav a.active {
 .contact-form button:hover {
   opacity: 0.9;
 }
+.services-intro {
+  max-width: 850px;
+  margin: 45px auto 60px;
+  text-align: center;
+}
+
+.services-intro h2 {
+  color: #6B8F71;
+  font-size: 36px;
+  margin-bottom: 18px;
+}
+
+.services-intro p {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #3b241d;
+  margin-bottom: 10px;
+}
