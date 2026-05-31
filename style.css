@@ -464,3 +464,10 @@ nav a.active {
   color: #3b241d;
   margin-bottom: 10px;
 }
+.hero-image img {
+  width: 100%;
+  border-radius: 24px;
+  display: block;
+  object-fit: cover;
+  height: 420px;
+}
