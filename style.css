@@ -493,3 +493,107 @@ nav a.active {
   line-height: 1.1;
   max-width: 600px;
 }
+/* Mobile fixes */
+@media (max-width: 850px) {
+  .site-header {
+    height: auto;
+    padding: 18px 6%;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .logo img {
+    height: 70px;
+  }
+
+  nav {
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 42px 6%;
+    gap: 28px;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+    line-height: 1.1;
+    max-width: 100%;
+  }
+
+  .hero-description {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  .hero-image img {
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .page-hero {
+    padding: 50px 6% 30px;
+  }
+
+  .page-hero h1 {
+    font-size: 34px;
+    line-height: 1.15;
+  }
+
+  .about-banner,
+  .service-banner {
+    padding: 0 6%;
+    margin-bottom: 35px;
+  }
+
+  .about-banner img,
+  .service-banner img {
+    height: 260px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .intro-grid,
+  .services-page,
+  .service-list {
+    grid-template-columns: 1fr;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .content-card,
+  .service-card {
+    padding: 28px;
+  }
+
+  .services-intro {
+    margin: 30px 6% 45px;
+    padding: 0;
+  }
+
+  .services-intro h2 {
+    font-size: 30px;
+  }
+
+  .services-intro p {
+    font-size: 17px;
+  }
+}
